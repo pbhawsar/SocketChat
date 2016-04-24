@@ -8,4 +8,4 @@ console.log(now.format('MMM Do YYYY, h:mm a'));
 var timestamp = 1461459896376;
 var timestampMoment = moment.utc(timestamp);
 
-console.log(timestampMoment.local().format('h:mm a'));
+console.log(moment.utc(timestamp).local().format('h:mm a'));
